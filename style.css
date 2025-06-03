@@ -51,39 +51,39 @@ body, html {
 
 /* setting up each section's background image */
 #sunrise {
-  background-image: url('media/sunrise.png');  
+  background-image: url('media/begining.png');  
 }
 
 #morning-walk {
-  background-image: url('media/image-14.png'); 
+  background-image: url('media/footsteps.png'); 
 }
 
 #classroom {
-  background-image: url('media/classroom.png');  
+  background-image: url('media/mirrortree.png');  
 }
 
 #dining {
-  background-image: url('media/dinner.jpg'); 
+  background-image: url('media/theclimb.png'); 
 }
 
 #pool {
-  background-image: url('media/swimming-pool.jpg'); 
+  background-image: url('media/therain.png'); 
 }
 
 #library {
-  background-image: url('media/library.png');  
+  background-image: url('media/memoryshore.png');  
 }
 
 #arts-center {
-  background-image: url('media/art.png'); 
+  background-image: url('media/thelight.png'); 
 }
 
 #sunset {
-  background-image: url('media/reflection.png');
+  background-image: url('media/thedream.png');
 }
 
 #graduation {
-  background-image: url('media/graduation.png'); 
+  background-image: url('media/thereturn.png'); 
 }
 
 #sports {
