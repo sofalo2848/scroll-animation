@@ -50,32 +50,57 @@ body, html {
 }
 
 /* setting up each section's background image */
+#sunrise {
+  background-image: url('media/image-13.png');  
+}
+
+#morning-walk {
+  background-image: url('media/image-14.png'); 
+}
+
+#classroom {
+  background-image: url('media/image-12.png');  
+}
+
+#dining {
+  background-image: url('media/dinner.jpg'); 
+}
+
+#pool {
+  background-image: url('media/swimming-pool.jpg'); 
+}
+
 #library {
-  background-image: url('media/image-11.png');
+  background-image: url('media/image-11.png');  /* Library image */
 }
 
-#tech-hub {
-  background-image: url('media/image-12.png');
+#arts-center {
+  background-image: url('media/art.png');  /* Arts Center image */
 }
 
-#campus-view {
-  background-image: url('media/image-13.png');
-}
-
-#nature-walk {
-  background-image: url('media/image-14.png');
-}
-
-#plaza {
-  background-image: url('media/image-15.png');
-}
-
-#exhibition {
-  background-image: url('media/image-16.png');
+#sunset {
+  background-image: url('media/sunset.jpg');
 }
 
 #graduation {
-  background-image: url('media/graduation.png');
+  background-image: url('media/graduation.png');  /* Graduation image */
+}
+
+/* Add a placeholder background style */
+[class*="placeholder"] {
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+[class*="placeholder"]::before {
+  content: "Image Placeholder";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 2rem;
+  text-align: center;
 }
 
 /* styles for the text boxes */
@@ -86,9 +111,9 @@ body, html {
   );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 20px;
-  max-width: 600px;
+  max-width: 700px;  /* Increased from 600px */
   border: 1px solid rgba(255, 255, 255, 0.9);
   transform: translateY(20px);
   transition: all 0.4s ease;
@@ -112,8 +137,8 @@ body, html {
 
 /* styles for the titles in text boxes */
 .caption h2 {
-  font-size: 2.2em;
-  margin-bottom: 0.8rem;
+  font-size: 2.8em;  /* Increased from 2.2em */
+  margin-bottom: 1rem;  /* Increased from 0.8rem */
   font-weight: 800;
   background: linear-gradient(45deg, #2563eb, #4f46e5);
   -webkit-background-clip: text;
@@ -122,6 +147,7 @@ body, html {
   position: relative;
   display: inline-block;
   letter-spacing: -0.02em;
+  line-height: 1.2;  /* Added for better spacing */
 }
 
 /* adds a line under titles when you hover */
@@ -144,10 +170,10 @@ body, html {
 
 /* styles for the description text */
 .caption p {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.4em;  /* Increased from 1.1em */
+  line-height: 1.7;  /* Increased from 1.6 */
   color: #334155;
-  margin-top: 0.8rem;
+  margin-top: 1rem;  /* Increased from 0.8rem */
   font-weight: 450;
 }
 
@@ -192,19 +218,19 @@ footer p {
 /* adjusts styles for tablets */
 @media (max-width: 768px) {
   .caption {
-    padding: 1.8rem;
+    padding: 2rem;
     margin: 0 1rem;
-    width: 90%;
-    max-width: 600px;
+    width: 92%;
+    max-width: 700px;
   }
 
   .caption h2 {
-    font-size: 2em;
-    margin-bottom: 0.8rem;
+    font-size: 2.4em;  /* Adjusted for tablets */
+    margin-bottom: 1rem;
   }
 
   .caption p {
-    font-size: 1.1em;
+    font-size: 1.3em;  /* Adjusted for tablets */
     line-height: 1.6;
   }
 }
@@ -212,17 +238,16 @@ footer p {
 /* adjusts styles for phones */
 @media (max-width: 480px) {
   .caption {
-    padding: 1.5rem;
-    width: 92%;
-    border-radius: 10px;
+    padding: 1.8rem;
+    width: 94%;
   }
 
   .caption h2 {
-    font-size: 1.8em;
+    font-size: 2em;  /* Adjusted for mobile */
   }
 
   .caption p {
-    font-size: 1em;
+    font-size: 1.2em;  /* Adjusted for mobile */
     line-height: 1.5;
   }
 }
