@@ -51,7 +51,7 @@ body, html {
 
 /* setting up each section's background image */
 #sunrise {
-  background-image: url('media/image-13.png');  
+  background-image: url('media/sunrise.png');  
 }
 
 #morning-walk {
@@ -59,7 +59,7 @@ body, html {
 }
 
 #classroom {
-  background-image: url('media/image-12.png');  
+  background-image: url('media/classroom.png');  
 }
 
 #dining {
@@ -71,22 +71,25 @@ body, html {
 }
 
 #library {
-  background-image: url('media/image-11.png');  /* Library image */
+  background-image: url('media/image-11.png');  
 }
 
 #arts-center {
-  background-image: url('media/art.png');  /* Arts Center image */
+  background-image: url('media/art.png'); 
 }
 
 #sunset {
-  background-image: url('media/sunset.jpg');
+  background-image: url('media/reflection.png');
 }
 
 #graduation {
-  background-image: url('media/graduation.png');  /* Graduation image */
+  background-image: url('media/graduation.png'); 
 }
 
-/* Add a placeholder background style */
+#sports {
+  background-image: url('media/sports.png');
+}
+
 [class*="placeholder"] {
   background-color: #f0f0f0;
   position: relative;
@@ -113,7 +116,7 @@ body, html {
   -webkit-backdrop-filter: blur(12px);
   padding: 2.5rem;
   border-radius: 20px;
-  max-width: 700px;  /* Increased from 600px */
+  max-width: 700px; 
   border: 1px solid rgba(255, 255, 255, 0.9);
   transform: translateY(20px);
   transition: all 0.4s ease;
@@ -137,8 +140,8 @@ body, html {
 
 /* styles for the titles in text boxes */
 .caption h2 {
-  font-size: 2.8em;  /* Increased from 2.2em */
-  margin-bottom: 1rem;  /* Increased from 0.8rem */
+  font-size: 2.8em; 
+  margin-bottom: 1rem; 
   font-weight: 800;
   background: linear-gradient(45deg, #2563eb, #4f46e5);
   -webkit-background-clip: text;
@@ -147,7 +150,7 @@ body, html {
   position: relative;
   display: inline-block;
   letter-spacing: -0.02em;
-  line-height: 1.2;  /* Added for better spacing */
+  line-height: 1.2; 
 }
 
 /* adds a line under titles when you hover */
@@ -170,10 +173,10 @@ body, html {
 
 /* styles for the description text */
 .caption p {
-  font-size: 1.4em;  /* Increased from 1.1em */
-  line-height: 1.7;  /* Increased from 1.6 */
+  font-size: 1.4em;  
+  line-height: 1.7;  
   color: #334155;
-  margin-top: 1rem;  /* Increased from 0.8rem */
+  margin-top: 1rem;  
   font-weight: 450;
 }
 
@@ -225,12 +228,12 @@ footer p {
   }
 
   .caption h2 {
-    font-size: 2.4em;  /* Adjusted for tablets */
+    font-size: 2.4em; 
     margin-bottom: 1rem;
   }
 
   .caption p {
-    font-size: 1.3em;  /* Adjusted for tablets */
+    font-size: 1.3em; 
     line-height: 1.6;
   }
 }
@@ -243,16 +246,16 @@ footer p {
   }
 
   .caption h2 {
-    font-size: 2em;  /* Adjusted for mobile */
+    font-size: 2em;  
   }
 
   .caption p {
-    font-size: 1.2em;  /* Adjusted for mobile */
+    font-size: 1.2em; 
     line-height: 1.5;
   }
 }
 
-/* fixes parallax for safari */
+
 @supports (-webkit-touch-callout: none) {
   .parallax {
     background-attachment: scroll;
