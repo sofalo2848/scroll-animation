@@ -86,9 +86,6 @@ body, html {
   background-image: url('media/thereturn.png'); 
 }
 
-#sports {
-  background-image: url('media/sports.png');
-}
 
 [class*="placeholder"] {
   background-color: #f0f0f0;
